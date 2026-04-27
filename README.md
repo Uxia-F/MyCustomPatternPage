@@ -7,3 +7,13 @@ As a "host" I am using GitHub pages.
 I need to do a database to store the measures of different people, so at the moment I will store them at Supabase or Firebase (still deciding)
 For the pattern logic I am going to use SVG (Scalable Vector Graphics), which I can draw with JS.
 
+
+List of things to do in order:
+
+PHASE 1:
+  - Initialize Repository. Basic folder structure (index.html, style.css and script.js).
+  - Define Data Structure (JSON). How a "Person" looks in code, to help me visualize what I am saving to the database ("Person" object: {"name": "Rose", "measurements": {"height": 170, "waist": 70}}).
+  - Choose Database (Supabase).
+
+
+  
