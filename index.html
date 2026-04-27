@@ -7,10 +7,62 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header>
+        <h1>Custom Garment Patterns</h1>
+        <p>Custom measurement for custtom patterns.</p>
+    </header>
     
-    <form action="profile">
+    <main>
+        <section id="profile-creator">
+            <h2>Create New Profile</h2>
+            <form id="person-form">
+                <input type="text" id="person-name" placeholder="Person's Name" required>
 
-    </form>
+                <h3>Measurements (cm)</h3>
+
+                <h4>Vertical Reference:</h4>
+                <label>Total height:<input type="number" id="m-total-height" placeholder=""></label>
+                <label>Nape to Waist<input type="number" id="m-nape-to-waist" placeholder=""></label>
+                <label>Waist to Floor:<input type="number" id="m-waist-to-floor" placeholder=""></label>
+
+                <h4>Upper Body</h4>
+                <label>Neck circumference:<input type="number" id="m-neck-circumference" placeholder=""></label>
+                <label>High bust:<input type="number" id="m-high-bust" placeholder=""></label>
+                <label>Full bust/Chest:<input type="number" id="m-full-bust" placeholder=""></label>
+                <label>Underbust:<input type="number" id="m-underbust" placeholder=""></label>
+                <label>Natural waist:<input type="number" id="m-natural-waist" placeholder=""></label>
+                <label>Shoulder width:<input type="number" id="m-shoulder-width" placeholder=""></label>
+                <label>Back width:<input type="number" id="m-back-width" placeholder=""></label>
+                <label>Bust span:<input type="number" id="m-bust-span" placeholder=""></label>
+
+                <h4>Lower Body</h4>
+                <label>High hip:<input type="number" id="m-high-hip" placeholder=""></label>
+                <label>Full hip:<input type="number" id="m-full-hip" placeholder=""></label>
+                <label>Waist to Hip:<input type="number" id="m-waist-to-hip" placeholder=""></label>
+                <label>Total rise:<input type="number" id="m-total-rise" placeholder=""></label>
+                <label>Thigh circumference:<input type="number" id="m-thigh circumference" placeholder=""></label>
+                <label>Knee circumference:<input type="number" id="m-knee-circumference" placeholder=""></label>
+                <label>Calf circumference:<input type="number" id="m-calf-circumference" placeholder=""></label>
+                <label>Ankle circumference:<input type="number" id="m-ankle-circumference" placeholder=""></label>
+
+                <h4>Arms & Hands</h4>
+                <label>Arm length:<input type="number" id="m-arm-length" placeholder=""></label>
+                <label>Shoulder to Elbow:<input type="number" id="m-shoulder-to-elbow" placeholder=""></label>
+                <label>Upper arm:<input type="number" id="m-upper-arm" placeholder=""></label>
+                <label>Wrist circumference:<input type="number" id="m-wrist-circumference" placeholder=""></label>
+                <label>Hand circumference:<input type="number" id="m-hand-circuumference" placeholder=""></label>
+
+                <h4>Feet & Head</h4>
+                <label>Head circumference:<input type="number" id="m-head-circumference" placeholder=""></label>
+                <label>Foot length:<input type="number" id="m-foot-length" placeholder=""></label>
+                <label>Foot width:<input type="number" id="m-foot-width" placeholder=""></label>
+                <label>Instep:<input type="number" id="m-instep" placeholder=""></label>
+
+                <button type="submit">Save Profile</button>
+            </form>
+        </section>
+    </main>
+    
 
 
     <script src="js/script.js"></script>
