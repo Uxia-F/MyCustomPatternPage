@@ -1,0 +1,88 @@
+:root{
+    --color-claro: #f8f5f2;
+    --color-anaranjado: #8b5e3c;
+}
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--color-claro);
+    color: #2d2d2d;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h3, h4 {
+    color: var(--color-anaranjado);
+    border-left: var(--color-anaranjado);
+    padding-left: 10px;
+    margin-top: 25px;
+}
+
+header{
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 2px solid var(--color-anaranjado);
+    margin-bottom: 30px;
+}
+
+
+/* Form Layout */
+#person-form {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* The Magic: Grid for inputs */
+#person-form label {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    align-items: center;
+    margin-bottom: 12px;
+    gap: 10px;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input:focus {
+    outline-color: var(--color-anaranjado);
+    background-color: #fffcf9;
+}
+
+button {
+    display: block;
+    width: 100%;
+    background-color: var(--color-anaranjado);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #6d4a2f;
+}
+
+/* Profile List Styling */
+.profile-card {
+    background: white;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 5px solid #8b5e3c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
