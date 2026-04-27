@@ -9,7 +9,7 @@ For the pattern logic I am going to use SVG (Scalable Vector Graphics), which I 
 .
 .
 .
-.
+
 List of things to do in order:
 
 PHASE 1 (Data & Setup):
@@ -30,4 +30,8 @@ PHASE 3 (Logic & Math):
   - Drawing the basic block. Start coding a simple rectangular "Scarf" pattern based on height, and then move on.
 
 
-  
+PHASE 4 (Export & Deploy):
+  - The Download Button. Use free library like jsPDF or file-saver to let user save their SVG pattern as a file they can print at home.
+  - Live Deployment.GitHub Pages to host site and to access the pattern maker.
+
+
