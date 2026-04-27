@@ -6,9 +6,7 @@ On this project I am going to use HTML, CSS and JavaScript on the frotnend for t
 As a "host" I am using GitHub pages.
 I need to do a database to store the measures of different people, so at the moment I will store them at Supabase or Firebase (still deciding)
 For the pattern logic I am going to use SVG (Scalable Vector Graphics), which I can draw with JS.
-.
-.
-.
+
 
 List of things to do in order:
 
