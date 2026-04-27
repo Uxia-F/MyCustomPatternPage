@@ -6,8 +6,10 @@ On this project I am going to use HTML, CSS and JavaScript on the frotnend for t
 As a "host" I am using GitHub pages.
 I need to do a database to store the measures of different people, so at the moment I will store them at Supabase or Firebase (still deciding)
 For the pattern logic I am going to use SVG (Scalable Vector Graphics), which I can draw with JS.
-
-
+.
+.
+.
+.
 List of things to do in order:
 
 PHASE 1 (Data & Setup):
@@ -20,3 +22,12 @@ PHASE 2 (User Interface):
   - Create the "Profile" Form. Build simple HTML to type in a name and the measures.
   - Build the "Person Gallery". Section on the page that fetches the names from th database and lists them to click on them.
   - Dynamic Garment Forms. Build dropdown menu (Dresses, Trousers, etc). When one is selected, use code to "unhide" only the specific measurement inputs needed for that item.
+
+
+PHASE 3 (Logic & Math):
+  - The "ease" Engine. JavaScript specifically for math. Input raw measures ans output "Drafting Measures" (example: waist + 2cm for breathing room)
+  - SVG Canvas Setup. SVGs use math to draw lines and curves, scalating patterns to any size without losing quality.
+  - Drawing the basic block. Start coding a simple rectangular "Scarf" pattern based on height, and then move on.
+
+
+  
