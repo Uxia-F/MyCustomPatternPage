@@ -10,10 +10,13 @@ For the pattern logic I am going to use SVG (Scalable Vector Graphics), which I 
 
 List of things to do in order:
 
-PHASE 1:
+PHASE 1 (Data & Setup):
   - Initialize Repository. Basic folder structure (index.html, style.css and script.js).
   - Define Data Structure (JSON). How a "Person" looks in code, to help me visualize what I am saving to the database ("Person" object: {"name": "Rose", "measurements": {"height": 170, "waist": 70}}).
   - Choose Database (Supabase).
 
 
-  
+PHASE 2 (User Interface):
+  - Create the "Profile" Form. Build simple HTML to type in a name and the measures.
+  - Build the "Person Gallery". Section on the page that fetches the names from th database and lists them to click on them.
+  - Dynamic Garment Forms. Build dropdown menu (Dresses, Trousers, etc). When one is selected, use code to "unhide" only the specific measurement inputs needed for that item.
