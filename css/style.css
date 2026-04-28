@@ -14,7 +14,7 @@ body{
 
 h3, h4 {
     color: var(--color-anaranjado);
-    border-left: var(--color-anaranjado);
+    border-left: 4px solid var(--color-anaranjado);
     padding-left: 10px;
     margin-top: 25px;
 }
@@ -56,6 +56,48 @@ input:focus {
     background-color: #fffcf9;
 }
 
+/* Question mark for descriptions */
+/* Tooltip Icon */
+.tooltip {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: var(--color-anaranjado);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    line-height: 18px;
+    cursor: help;
+    margin-left: 5px;
+    position: relative;
+}
+
+/* Tooltip Text (Hidden by default) */
+.tooltip::after {
+    content: attr(data-descr); /* Grabs text from the data-descr attribute */
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: normal;
+    width: 160px; /* Width of the popup */
+    display: none; /* Hide it */
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Show on Hover */
+.tooltip:hover::after {
+    display: block;
+}
+
+
 button {
     display: block;
     width: 100%;
@@ -73,6 +115,15 @@ button {
 
 button:hover {
     background-color: #6d4a2f;
+}
+
+/* Delete button */
+.btn-delete {
+    background-color: #e74c3c !important;
+    width: auto !important;
+    margin: 0 !important;
+    padding: 5px 10px !important;
+    font-size: 12px !important;
 }
 
 /* Profile List Styling */
