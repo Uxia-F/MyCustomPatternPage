@@ -55,10 +55,29 @@ function displayProfiles() {
         div.className = 'profile-card';
         div.innerHTML = `
             <span><strong>${p.name}</strong> (${Object.keys(p.measurements).length} measures)</span>
-            <button onclick="viewProfile(${index})" style="width: auto; margin: 0; padding: 5px 10px;">View Info</button>
+            <div>
+                <button onclick="viewProfile(${index})" style="width: auto; margin: 0; padding: 5px 10px;">View</button>
+                <button onclick="deleteProfile(${index})" class="btn-delete">Delete</button>
+            </div>
         `;
         profilesContainer.appendChild(div);
     });
+}
+
+// Function to delete a profile
+function deleteProfile(index) {
+    if (confirm("Are you sure you want to delete this profile?")) {
+        let profiles = JSON.parse(localStorage.getItem('sewing_profiles')) || [];
+        
+        // Remove 1 item at the specific index
+        profiles.splice(index, 1);
+        
+        // Save the updated list back to localStorage
+        localStorage.setItem('sewing_profiles', JSON.stringify(profiles));
+        
+        // Refresh the display
+        displayProfiles();
+    }
 }
 
 // Function to view info in the console for now
